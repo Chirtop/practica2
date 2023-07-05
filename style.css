@@ -1,0 +1,23 @@
+﻿.class1{
+    color:green;
+}
+
+.class1 div:nth-child(3){
+    color:red;
+}
+
+.class1 div:nth-child(2)::first-letter{
+    color:blue;
+}
+
+div+a{
+    background-color:yellow;
+}
+
+a:visited{
+    color:black;
+}
+
+.class1 p{
+    margin-left:30px;
+}
