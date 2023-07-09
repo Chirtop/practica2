@@ -1,0 +1,14 @@
+﻿.table{
+    font-size:50px;
+    text-align:center;
+    border-spacing:60px 60px;
+    
+}
+
+td {
+    border: 3px solid green;
+    padding:60px;
+}
+
+
+

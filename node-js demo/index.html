@@ -1,0 +1,34 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="form-validation.js"></script>
+    <script src="fetch.js"></script>
+</head>
+<body>
+    <p class="p" onClick="onClick()">click me</p>
+    <script>
+        const onClick = () => {
+            const paragraphs = document.getElementsByClassName("p"); 
+            //aduce un array
+            paragraphs[0].innerHTML = "You clicked me";
+            
+            const heading = document.createElement("h1");
+            heading.innerHTML = "title";
+            heading.style = "background-color:red";
+            document.body.appendChild(heading);
+        }
+        
+    </script>
+    <form name="form">
+        <input type="text" name="nume">
+        <input type="submit">
+    </form>
+
+    
+</body>
+</html>
