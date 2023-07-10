@@ -53,19 +53,14 @@ public class PersonsController : Controller
     {
         string jsonContents = System.IO.File.ReadAllText("Persons.json");
         Person[] persons =  JsonConvert.DeserializeObject<Person[]>(jsonContents);
-        List<string> searchResult = new List<string>();
+        List <string> searchResult = new List <string>();
         
             for (int i = 0; i < persons.Length; i++)
             {
                 if(persons[i].email.Contains(term))
                     searchResult.Add(persons[i].email);
             }
-            if (searchResult.Count != 0)
-            {
-                return Ok(searchResult);
-            }
-            
-        return NotFound();
+            return Ok(searchResult);
     }
 }
 
